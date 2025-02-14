@@ -1,10 +1,10 @@
 # Blockchain Fraud Detection System
 A fraud detection system that analyzes Ethereum blockchain transactions to identify potentially fraudulent activity. It collects, stores, and analyzes 1 million+ transactions using blockchain data science, machine learning, and SQL-based rule detection.
 
-📍 Frank Seely | Data Science @ Boston University 
-Portfolio: https://seelyfrank.github.io/webportfolio/
-Email: seelyfrank@gmail.com
-LinkedIn: https://www.linkedin.com/in/frank-seely/
+📍 Frank Seely | Data Science @ Boston University   
+Portfolio: https://seelyfrank.github.io/webportfolio/  
+Email: seelyfrank@gmail.com  
+LinkedIn: https://www.linkedin.com/in/frank-seely/  
 
 ## Technical Skills (to be) Used
 - [x] Blockchain Data Engineering – Fetching transactions from Ethereum using ethers.js.  
