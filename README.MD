@@ -3,13 +3,13 @@ A fraud detection system that analyzes Ethereum blockchain transactions to ident
 
 ## Technical Skills (to be) Used
 - [x] Blockchain Data Engineering – Fetching transactions from Ethereum using ethers.js.  
-- [] Database Management (SQL & MySQL) – Storing blockchain transactions for structured analysis.  
-- []Data Analysis (Python, Pandas, SQL) – Extracting insights from transaction data.  
-- [] Machine Learning (Unsupervised Anomaly Detection) – Detecting fraud without labeled data.  
-- [] Full-Stack Development (Node.js, JavaScript) – Backend integration with MySQL and blockchain.  
-- [] Cloud & APIs (Alchemy, Infura) – Fetching live blockchain data.  
-- [] Big Data Handling – Managing large datasets efficiently.  
-- [] Data Visualization (Power BI, Matplotlib, Seaborn) – Presenting fraud detection insights.  
+- [ ] Database Management (SQL & MySQL) – Storing blockchain transactions for structured analysis.  
+- [ ]Data Analysis (Python, Pandas, SQL) – Extracting insights from transaction data.  
+- [ ] Machine Learning (Unsupervised Anomaly Detection) – Detecting fraud without labeled data.  
+- [ ] Full-Stack Development (Node.js, JavaScript) – Backend integration with MySQL and blockchain.  
+- [ ] Cloud & APIs (Alchemy, Infura) – Fetching live blockchain data.  
+- [ ] Big Data Handling – Managing large datasets efficiently.  
+- [ ] Data Visualization (Power BI, Matplotlib, Seaborn) – Presenting fraud detection insights.  
 
 ## Project Architecture
 #### ✅ Step 1: Collect Transactions 🪙
