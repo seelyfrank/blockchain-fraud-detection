@@ -38,7 +38,7 @@ Creating fraud detection reports for further investigation.
 
 
 ### Long-Term Goals
- Train an ML model for fraud classification (Supervised Learning)
+ Train an ML model for fraud classification (Unsupervised Learning) or use Anomaly Detection
  Deploy a real-time fraud detection API
  Build an interactive Power BI dashboard
  Integrate real-time alerts for suspicious transactions
