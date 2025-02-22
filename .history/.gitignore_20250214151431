@@ -1,0 +1,11 @@
+# Keep keys private
+.env
+
+node_modules/
+
+# Ignore Hardhat artifacts (if need to reinstall)
+artifacts/
+cache/
+
+# Ignore log files
+*.log
