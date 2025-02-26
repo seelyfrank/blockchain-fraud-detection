@@ -9,6 +9,3 @@ cache/
 
 # Ignore log files
 *.log
-
-# Ignore large files
-full_transactions.csv

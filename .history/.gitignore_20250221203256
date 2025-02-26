@@ -11,4 +11,4 @@ cache/
 *.log
 
 # Ignore large files
-full_transactions.csv
+

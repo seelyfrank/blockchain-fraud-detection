@@ -8,12 +8,11 @@ LinkedIn: https://www.linkedin.com/in/frank-seely/
 
 ## Technical Skills (to be) Used
 - [x] Blockchain Data Engineering – Fetching transactions from Ethereum using ethers.js.  
-- [ ] Database Management (SQL & MySQL) – Storing blockchain transactions for structured analysis.  
-- [ ] Data Analysis (Python, Pandas, SQL) – Extracting insights from transaction data.  
-- [ ] Machine Learning (Unsupervised Anomaly Detection) – Detecting fraud without labeled data.  
-- [ ] Full-Stack Development (Node.js, JavaScript) – Backend integration with MySQL and blockchain.  
-- [ ] Cloud & APIs (Alchemy, Infura) – Fetching live blockchain data.  
-- [ ] Big Data Handling – Managing large datasets efficiently.  
+- [x] Database Management (MySQL) – Storing blockchain transactions for structured analysis.  
+- [x] Data Analysis (Python, Pandas, SQL) – Extracting insights from transaction data.  
+- [x] Machine Learning (Unsupervised Anomaly Detection) – Detecting fraud without labeled data.  
+- [x] Full-Stack Development (Node.js, JavaScript) – Backend integration with MySQL and blockchain.  
+- [x] APIs (Alchemy, Ethers) – Fetching live blockchain data.  
 - [ ] Data Visualization (Power BI, Matplotlib, Seaborn) – Presenting fraud detection insights.  
 
 ## Project Architecture
