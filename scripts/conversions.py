@@ -23,6 +23,5 @@ def convert_eth_usd(df):
 
     return df
 
-
 def main():
     get_eth_price()
