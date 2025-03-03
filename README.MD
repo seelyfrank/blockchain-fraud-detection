@@ -8,12 +8,12 @@ LinkedIn: https://www.linkedin.com/in/frank-seely/
 
 ## Technical Skills (to be) Used
 - [x] Blockchain Data Engineering – Fetching transactions from Ethereum using ethers.js.  
-- [ ] Database Management (SQL & MySQL) – Storing blockchain transactions for structured analysis.  
-- [ ] Data Analysis (Python, Pandas, SQL) – Extracting insights from transaction data.  
-- [ ] Machine Learning (Unsupervised Anomaly Detection) – Detecting fraud without labeled data.  
-- [ ] Full-Stack Development (Node.js, JavaScript) – Backend integration with MySQL and blockchain.  
-- [ ] Cloud & APIs (Alchemy, Infura) – Fetching live blockchain data.  
-- [ ] Big Data Handling – Managing large datasets efficiently.  
+- [X] Database Management (SQL & MySQL) – Storing blockchain transactions for structured analysis.  
+- [X] Data Analysis (Python, Pandas, SQL) – Extracting insights from transaction data.  
+- [X] Machine Learning (Unsupervised Anomaly Detection) – Detecting fraud without labeled data.  
+- [X] Full-Stack Development (Node.js, JavaScript) – Backend integration with MySQL and blockchain.  
+- [X] Cloud & APIs (Alchemy, Infura) – Fetching live blockchain data.  
+- [X] Big Data Handling – Managing large datasets efficiently.  
 - [ ] Data Visualization (Power BI, Matplotlib, Seaborn) – Presenting fraud detection insights.  
 
 ## Project Architecture
@@ -21,7 +21,7 @@ LinkedIn: https://www.linkedin.com/in/frank-seely/
 
 The deploy.js script fetches, stores, and manages Ethereum blockchain transactions in a structured database for fraud detection analysis. It serves as the data pipeline that collects live transaction data, ensuring the system has a continuous  dataset for analysis.
 
-#### 🔵 Step 2: Exploratory Data Analysis (EDA)
+#### ✅ Step 2: Exploratory Data Analysis (EDA)
 
 Analyze transaction volumes, wallet activity, and gas usage.
 Identify high-value transactions and abnormal behavior.
