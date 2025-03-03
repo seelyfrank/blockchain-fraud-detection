@@ -9,3 +9,4 @@ cache/
 
 # Ignore log files
 *.log
+data/full_transactions.csv
