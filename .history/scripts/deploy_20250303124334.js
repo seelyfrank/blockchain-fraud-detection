@@ -14,7 +14,7 @@ const dbPassword = process.env.DB_PASSWORD;
 const provider = new ethers.JsonRpcProvider(alchemyUrl);
 const wallet = new ethers.Wallet(privateKey, provider);
 
-// initiate the connection
+// Connect to MySQL
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -35,7 +35,7 @@ async function getTransactionCount() {
     });
 }
 
-// save the transactions to mysql
+// Function to save transactions to MySQL
 async function saveToDatabase(tx) {
     const query = `INSERT INTO transactions (hash, sender, recipient, value, gas_used, gas_price)
                    VALUES (?, ?, ?, ?, ?, ?)
@@ -84,7 +84,7 @@ async function continuousFetch() {
     let latestBlock = await provider.getBlockNumber();
     
     while (true) {
-        let txCount = await getTransactionCount(); // wait for query
+        let txCount = await getTransactionCount();
         console.log(`Current transaction count: ${txCount}`);
 
         // For when we hit the set maximum

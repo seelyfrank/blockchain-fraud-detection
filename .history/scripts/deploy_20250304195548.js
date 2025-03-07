@@ -84,7 +84,7 @@ async function continuousFetch() {
     let latestBlock = await provider.getBlockNumber();
     
     while (true) {
-        let txCount = await getTransactionCount(); // wait for query
+        let txCount = await getTransactionCount(); // wait for 
         console.log(`Current transaction count: ${txCount}`);
 
         // For when we hit the set maximum
