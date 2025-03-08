@@ -24,7 +24,7 @@ Returns:
     pipe: Trained pipeline with standard scaler and isolation forest
 
 '''
-def train_isolation_forest(df, features, n_estimators, contamination, random_state=20):
+def train_isolation_forest(df, features, n_estimators=100, contamination=.01, random_state=20):
 
     df_features = df[features].copy()
 
@@ -60,46 +60,3 @@ def train_isolation_forest(df, features, n_estimators, contamination, random_sta
     print(f"Min: {np.min(scores)}\nMax: {np.max(scores)}\nMean: {np.mean(scores)}\nStd Dev: {np.std(scores)}")
 
     return df_results, pipe
-
-
-
-''' 
-Creates a scatter plot of all anomalies in the dataframe (red is anomaly and green is non-anomaly)
-
-Params:
-    isolation_df: dataframe expecting an 'anomaly_score' column and a 'value' column
-
-Returns nothing
-'''
-def scatter_plot_anomalies(isolation_df):
-    anomaly_values = isolation_df[isolation_df['anomaly_score'] == -1]['value']
-    normal_values = isolation_df[isolation_df['anomaly_score'] != -1]['value']
-    print(anomaly_values)
-
-    index_anomaly = anomaly_values.index
-    index_normal = normal_values.index
-
-    sns.set_style("whitegrid")
-    plt.figure(figsize=(20, 10), facecolor="whitesmoke")
-
-    plt.scatter(index_normal, normal_values, 
-                linestyle='-', marker='o', 
-                s=15, alpha=0.5, 
-                color='green', edgecolor='black', 
-                label="Normal Transactions")
-
-    plt.scatter(index_anomaly, anomaly_values, 
-                linestyle='-', marker='o', 
-                s=30, alpha=0.8, 
-                color='red', edgecolor="black", 
-                label="Anomalous Transactions")
-
-    plt.yscale("log")
-    plt.xticks(np.linspace(0, len(isolation_df), num=11, dtype=int), fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.xlabel('Transaction Index', fontsize=14, fontweight='bold')
-    plt.ylabel('Transaction Value (Log Scale)', fontsize=14, fontweight='bold')
-    plt.title('Anomalies vs. Normal Transactions', fontsize=16, fontweight='bold', color="black")
-    plt.grid(True, linestyle='--', alpha=0.5)
-    plt.legend(fontsize=12, frameon=True, facecolor="whitesmoke", edgecolor="black", loc="upper right")
-    plt.show()
