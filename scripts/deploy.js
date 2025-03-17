@@ -12,7 +12,6 @@ const dbPassword = process.env.DB_PASSWORD;
 
 // Connect to Ethereum
 const provider = new ethers.JsonRpcProvider(alchemyUrl);
-const wallet = new ethers.Wallet(privateKey, provider);
 
 // initiate the connection
 const db = mysql.createConnection({
